@@ -6,17 +6,14 @@ const Hello: React.FC = () => {
     return (
         <React.Fragment>
             Hello friends!
-            <Link to='/home'>
-                <Button size="large" color='primary' variant='contained'>
-                    Go to home
-                </Button>
-            </Link>
 
-            <Link to='/second'>
-                <Button size="large" color='secondary' variant='contained'>
-                    Go to Second
-                </Button>
-            </Link>
+            <div>
+                <Link to='/second'>
+                    <Button size="large" color='secondary' variant='contained'>
+                        Go to Aloha
+                    </Button>
+                </Link>
+            </div>
         </React.Fragment>
     )
 }
