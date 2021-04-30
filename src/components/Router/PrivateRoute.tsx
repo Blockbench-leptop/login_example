@@ -21,7 +21,7 @@ const PrivateRoute = () => {
     const isReady = loadingStatus === LoadingStatus.LOADING
 
     useEffect(() => {
-        token ? history.push('/home') : history.push('/')
+        auth_key ? history.push('/home') : history.push('/')
     }, [token, history]);
 
     useEffect(() => {

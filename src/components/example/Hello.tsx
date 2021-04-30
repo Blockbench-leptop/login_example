@@ -6,7 +6,6 @@ const Hello: React.FC = () => {
     return (
         <React.Fragment>
             Hello friends!
-
             <div>
                 <Link to='/second'>
                     <Button size="large" color='secondary' variant='contained'>
