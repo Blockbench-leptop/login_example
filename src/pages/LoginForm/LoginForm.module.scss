@@ -1,0 +1,158 @@
+@import "../../styles/globals";
+.paper {
+  font-family: 'Nunito',Droid Sans, sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+  color: #c96969;
+}
+
+.box {
+  min-width: 368px;
+  max-width: 675px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.image {
+  width: 75px;
+}
+
+.header {
+  text-align: center;
+  color: #2D424A;
+  background-color: transparent;
+
+  &span {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 53px
+  }
+}
+
+.subtitle {
+  text-align: center;
+  color: $gray-900;
+  background-color: transparent;
+
+  &p {
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+
+    &span {
+      color: #5D9CB0
+    }
+  }
+}
+
+.handWaveImg {
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-5deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(12deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(9deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+.label {
+  left: 0px;
+  top: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 14px;
+
+  &b {
+    color: red;
+  }
+}
+
+.checkbox {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+
+  &p {
+    font-size: 16px;
+
+    &a {
+      color: #5D9CB0;
+      text-decoration: none
+    }
+  }
+}
+
+.registerButton {
+  margin: 10px auto 0 !important;
+  padding: 20px 100px;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 0;
+  background-color: #F2C268
+}
+
+.registerField {
+  margin-bottom: 16px !important;
+}
+
+.adminButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
