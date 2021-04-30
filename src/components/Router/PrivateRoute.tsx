@@ -9,6 +9,7 @@ import LoginForm from "../../pages/LoginForm/LoginForm";
 import Aloha from "../example/Aloha";
 import Hello from "../example/Hello";
 import {logOut} from "../../store/branches/user/actionCreators";
+import Home from "../example/Home";
 
 const PrivateRoute = () => {
     const location = useLocation()
@@ -21,8 +22,8 @@ const PrivateRoute = () => {
     const isReady = loadingStatus === LoadingStatus.LOADING
 
     useEffect(() => {
-        auth_key ? history.push('/home') : history.push('/')
-    }, [token, history]);
+        auth_key ? history.push('/hello') : history.push('/')
+    }, [auth_key, history]);
 
     useEffect(() => {
         if (auth_key) {
@@ -39,9 +40,10 @@ const PrivateRoute = () => {
     return (
         <React.Fragment>
             <Switch>
-                <Route exact path={['/signin', '/']} component={LoginForm}/>
-                <Route exact path="/home" component={Hello}/>
-                <Route exact path="/second" component={Aloha}/>
+                <Route exact path='/' component={Home}/>
+                <Route exact path='/signin' component={LoginForm}/>
+                <Route exact path="/hello" component={Hello}/>
+                <Route exact path="/aloha" component={Aloha}/>
             </Switch>
         </React.Fragment>
     )

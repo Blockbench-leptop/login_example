@@ -7,9 +7,9 @@ const Aloha: React.FC = () => {
         <React.Fragment>
                 Aloha
             <div>
-                <Link to='/home'>
+                <Link to='/hello'>
                     <Button size="large" color='primary' variant='contained'>
-                        Go to home
+                        Go to hello
                     </Button>
                 </Link>
             </div>
